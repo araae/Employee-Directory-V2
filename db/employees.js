@@ -13,3 +13,19 @@ const employees = [
 
 /* WARNING: this must remain the default export in order for the tests to work! */
 export default employees;
+
+//get all employees
+export function getEmployees() {
+  return employees;
+}
+
+//findan employee by id
+export function getEmployeeById(id) {
+  return employees.find((e) => e.id === id);
+}
+
+//pick a random employee
+export function getRandomEmployee() {
+  const randomIndex = Math.floor(Math.random() * employees.length);
+  return employees[randomIndex];
+}
