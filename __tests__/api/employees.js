@@ -1,5 +1,5 @@
 import express from "express";
-import employees, { getRandomEmployee, getEmployeeById } from "#db/employees";
+import { getRandomEmployee, getEmployeeById, addEmployee } from "#db/employees";
 
 const router = express.Router();
 
